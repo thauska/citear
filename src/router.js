@@ -1,6 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import Events from './views/Events.vue';
+import Projects from './views/Projects.vue';
+import Gallery from './views/Gallery.vue';
+import Contact from './views/Contact.vue';
 
 Vue.use(Router);
 
@@ -12,6 +16,26 @@ export default new Router({
             path: '/',
             name: 'home',
             component: Home
+        },
+        {
+            path: '/',
+            name: 'events',
+            component: Events
+        },
+        {
+            path: '/',
+            name: 'projects',
+            component: Projects
+        },
+        {
+            path: '/',
+            name: 'gallery',
+            component: Gallery
+        },
+        {
+            path: '/',
+            name: 'contact',
+            component: Contact
         },
         {
             path: '/about',
