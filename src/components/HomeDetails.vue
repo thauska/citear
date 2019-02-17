@@ -8,10 +8,7 @@
       </v-flex>
       <v-card>
         <v-layout row wrap>
-          <v-flex xs12 lg5>
-            <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"></v-img>
-          </v-flex>
-          <v-flex xs12 lg7>
+          <v-flex xs12 lg12>
             <v-card-title primary-title>
               <div>
                 <h3 class="headline font-weight-medium">Repercussão dos trabalhos do grupo</h3>
@@ -43,26 +40,32 @@
                   <br>
                 </ul>
               </div>
+            </v-container>
+          </v-flex>
+          <v-flex xs12 lg6>
+            <v-card-title>
               <div>
-                <p class="headline">Lideres do Grupo</p>
-                <ul class="subheading">
-                  <ol>Cristina Lúcia Dias Vaz</ol>
-                  <ol>Iran Abreu Mendes</ol>
-                </ul>
+                <h3 class="headline font-weight-medium">Linhas de pesquisa</h3>
               </div>
+            </v-card-title>
+            <v-container>
+              <p class="subheading">Criatividade e Inovação em Ciência, Tecnologia e Arte |</p>
+            </v-container>            
+          </v-flex>
+          <v-flex xs12 lg6>
+            <v-card-title primary-title>
+              <div>
+                <h3 class="headline font-weight-medium">Lideres do Grupo</h3>
+              </div>
+            </v-card-title>
+            <v-container>
+              <ul class="subheading">
+                <ol>Cristina Lúcia Dias Vaz</ol>
+                <ol>Iran Abreu Mendes</ol>
+              </ul>
             </v-container>
           </v-flex>
         </v-layout>
-      </v-card>
-      <v-card>
-        <v-card-title>
-          <div>
-            <h3 class="headline font-weight-medium">Linhas de pesquisa</h3>
-          </div>
-        </v-card-title>
-        <v-container>
-          <p class="subheading">Criatividade e Inovação em Ciência, Tecnologia e Arte |</p>
-        </v-container>
       </v-card>
     </v-layout>
   </v-container>
