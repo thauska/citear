@@ -15,22 +15,22 @@ const router = new Router({
             component: Home
         },
         {
-            path: '/',
+            path: '/events',
             name: 'events',
             component: Events
         },
         {
-            path: '/',
+            path: '/projects',
             name: 'projects',
             component: () => import('./views/Projects.vue')
         },
         {
-            path: '/',
+            path: '/gallery',
             name: 'gallery',
             component: () => import('./views/Gallery.vue')
         },
         {
-            path: '/',
+            path: '/contact',
             name: 'contact',
             component: () => import('./views/Contact.vue')
         }
