@@ -1,12 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
-import Events from './views/Events.vue';
 
 Vue.use(Router);
 
 const router = new Router({
-    mode: 'history',
+    mode: 'hash',
     base: process.env.BASE_URL,
     routes: [
         {
@@ -15,22 +14,27 @@ const router = new Router({
             component: Home
         },
         {
-            path: '/events',
+            path: '/integrantes',
+            name: 'members',
+            component: () => import('./views/Members.vue')
+        },
+        {
+            path: '/eventos',
             name: 'events',
-            component: Events
+            component: () => import('./views/Events.vue')
         },
         {
-            path: '/projects',
-            name: 'projects',
-            component: () => import('./views/Projects.vue')
+            path: '/producao',
+            name: 'producao',
+            component: () => import('./views/Producao.vue')
         },
         {
-            path: '/gallery',
+            path: '/galeria',
             name: 'gallery',
             component: () => import('./views/Gallery.vue')
         },
         {
-            path: '/contact',
+            path: '/contatos',
             name: 'contact',
             component: () => import('./views/Contact.vue')
         }
