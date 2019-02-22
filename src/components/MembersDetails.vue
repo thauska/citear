@@ -1,70 +1,90 @@
 <template>
-  <v-container xs12>
-    <v-card>
-      <v-card-title class="secondary white--text headline">Pesquisadores</v-card-title>
-      <v-layout justify-space-between pa-3>
-        <v-flex xs6>
-          <v-treeview
-            :active.sync="active"
-            :items="pesquisadores"
-            :open.sync="open"
-            activatable
-            active-class="primary--text"
-            class="grey lighten-5"
-            open-on-click
-            transition
-          >
-            <v-icon
-              v-if="!item.children"
-              slot="prepend"
-              slot-scope="{ item, active }"
-              :color="active ? 'primary' : ''"
-            >mdi-account</v-icon>
-          </v-treeview>
-        </v-flex>
-        <v-flex d-flex text-xs-center xs6>  
-          <v-scroll-y-transition mode="out-in">
-            <div
-              v-if="!selectedP"
-              class="title grey--text text--lighten-1 font-weight-light"
-              style="align-self: center;"
-            >Selecione um nome</div>
-            <v-card v-else :key="selectedP.id" class="pt-4 mx-auto" flat max-width="400">
-              <v-card-text>
-                <v-avatar size="88">
-                  <v-img :src="`${selectedP.img}`" class="mb-4"></v-img>
-                </v-avatar>
-                <h3 class="headline mb-2">{{ selectedP.name }}</h3>
-                <div class="blue--text mb-2">
-                  <strong>Titulação Máxima:</strong>
-                  {{ selectedP.titulacao }}
-                </div>
-              </v-card-text>
-              <v-divider></v-divider>
-              <v-layout tag="v-card-text" text-xs-left wrap>
-                <v-flex tag="strong" text-xs-right mr-3 mb-2>Lattes:</v-flex>
-                <v-flex>
-                  <a :href="`${selectedP.website}`" target="_blank">
-                    <v-avatar :size="35">
-                      <img src="../assets/img/icone_lattes.jpg">
-                    </v-avatar>
-                  </a>
+    <v-container>
+        <v-card xs12>
+            <v-card-title class="secondary white--text headline"
+                >Pesquisadores</v-card-title
+            >
+            <v-layout justify-space-between pa-3>
+                <v-flex xs6>
+                    <v-treeview
+                        :active.sync="active"
+                        :items="pesquisadores"
+                        :open.sync="open"
+                        activatable
+                        active-class="primary--text"
+                        class="grey lighten-5"
+                        open-on-click
+                        transition
+                    >
+                        <v-icon
+                            v-if="!item.children"
+                            slot="prepend"
+                            slot-scope="{ item, active }"
+                            :color="active ? 'primary' : ''"
+                            >mdi-account</v-icon
+                        >
+                    </v-treeview>
                 </v-flex>
-              </v-layout>
-            </v-card>
-          </v-scroll-y-transition>
-        </v-flex>
-      </v-layout>
-    </v-card>
-    <br>
-   <v-divider></v-divider>
-
-  </v-container>
+                <v-flex d-flex text-xs-center xs6>
+                    <v-scroll-y-transition mode="out-in">
+                        <div
+                            v-if="!selectedP"
+                            class="title grey--text text--lighten-1 font-weight-light"
+                            style="align-self: center;"
+                        >
+                            Selecione um nome
+                        </div>
+                        <v-card
+                            v-else
+                            :key="selectedP.id"
+                            class="pt-4 mx-auto"
+                            flat
+                            max-width="400"
+                        >
+                            <v-card-text>
+                                <v-avatar size="88">
+                                    <v-img
+                                        :src="`${selectedP.img}`"
+                                        class="mb-4"
+                                    ></v-img>
+                                </v-avatar>
+                                <h3 class="headline mb-2">
+                                    {{ selectedP.name }}
+                                </h3>
+                                <div class="blue--text mb-2">
+                                    <strong>Titulação Máxima:</strong>
+                                    {{ selectedP.titulacao }}
+                                </div>
+                            </v-card-text>
+                            <v-divider></v-divider>
+                            <v-layout tag="v-card-text" text-xs-left wrap>
+                                <v-flex tag="strong" text-xs-right mr-3 mb-2
+                                    >Lattes:</v-flex
+                                >
+                                <v-flex>
+                                    <a
+                                        :href="`${selectedP.website}`"
+                                        target="_blank"
+                                    >
+                                        <v-avatar :size="35">
+                                            <img
+                                                src="../assets/img/icone_lattes.jpg"
+                                            />
+                                        </v-avatar>
+                                    </a>
+                                </v-flex>
+                            </v-layout>
+                        </v-card>
+                    </v-scroll-y-transition>
+                </v-flex>
+            </v-layout>
+        </v-card>
+        <br />
+        <v-divider></v-divider>
+    </v-container>
 </template>
 
 <script>
-const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
-
 export default {
     name: 'membersdetails',
     data: () => ({
@@ -151,5 +171,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

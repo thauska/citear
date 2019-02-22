@@ -1,20 +1,20 @@
 <template>
-  <v-app id="app">
-    <app-navigation></app-navigation>
-    <vue-particles
-      color="#b3d4fc"
-      :particleOpacity="0.7"
-      shapeType="circle"
-      :particleSize="4"
-      linesColor="#9fa8da"
-    ></vue-particles>
-    <v-content transition="slide-x-transition">
-      <router-view></router-view>
-    </v-content>
-    <v-divider></v-divider>
+    <v-app id="app">
+        <app-navigation></app-navigation>
+        <vue-particles
+            color="#b3d4fc"
+            :particleOpacity="0.7"
+            shapeType="circle"
+            :particleSize="4"
+            linesColor="#9fa8da"
+        ></vue-particles>
+        <v-content transition="slide-x-transition">
+            <router-view></router-view>
+        </v-content>
+        <v-divider></v-divider>
 
-    <app-footer></app-footer>
-  </v-app>
+        <app-footer></app-footer>
+    </v-app>
 </template>
 
 <script>
@@ -32,7 +32,7 @@ export default {
 
 <style>
 #particles-js {
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

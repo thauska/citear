@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-layout column>
+        <v-layout column mb-4>
             <v-flex
                 class="display-2 text-xs-center my-5 title_gl font-weight-medium"
                 >Grupo de Pesquisa CiTeAr

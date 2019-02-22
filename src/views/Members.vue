@@ -1,10 +1,16 @@
 <template>
-  <span>
-    <img-hero :style="{'background-image': 'url(' + require('../assets/img/hero1.jpg') + ')'}">Integrantes</img-hero>
-    <members-details></members-details>
-    <members-details2></members-details2>
-    <members-details3></members-details3>
-  </span>
+    <span>
+        <img-hero
+            :style="{
+                'background-image':
+                    'url(' + require('../assets/img/hero1.jpg') + ')'
+            }"
+            >Integrantes</img-hero
+        >
+        <members-details></members-details>
+        <members-details2></members-details2>
+        <members-details3></members-details3>
+    </span>
 </template>
 
 <script>
@@ -20,10 +26,8 @@ export default {
         MembersDetails,
         MembersDetails2,
         MembersDetails3
-        
     }
 };
 </script>
 
-<style>
-</style>
+<style></style>

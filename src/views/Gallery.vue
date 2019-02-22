@@ -1,8 +1,14 @@
 <template>
-  <span>
-    <img-hero :style="{'background-image': 'url(' + require('../assets/img/hero4.jpg') + ')'}">Galeria</img-hero>
-    <img-construcao></img-construcao>
-  </span>
+    <span>
+        <img-hero
+            :style="{
+                'background-image':
+                    'url(' + require('../assets/img/hero4.jpg') + ')'
+            }"
+            >Galeria</img-hero
+        >
+        <img-construcao></img-construcao>
+    </span>
 </template>
 
 <script>
@@ -18,6 +24,4 @@ export default {
 };
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -1,10 +1,14 @@
 <template>
-  <span>
-    <img-hero
-      :style="{'background-image': 'url(' + require('../assets/img/hero3.jpg') + ')'}"
-    >Produção</img-hero>
-    <img-construcao></img-construcao>
-  </span>
+    <span>
+        <img-hero
+            :style="{
+                'background-image':
+                    'url(' + require('../assets/img/hero3.jpg') + ')'
+            }"
+            >Produção</img-hero
+        >
+        <img-construcao></img-construcao>
+    </span>
 </template>
 
 <script>
