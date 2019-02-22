@@ -1,4 +1,4 @@
-# citear
+# Site para Grupo de Pesquisa Ciência, Tecnologia e Arte da UFPA
 
 ## Project setup
 ```
