@@ -4,7 +4,7 @@ import Home from './views/Home.vue';
 
 Vue.use(Router);
 
-const router = new Router({
+export default new Router({
     mode: 'history',
     base: '/citear/',
     routes: [
@@ -40,5 +40,3 @@ const router = new Router({
         }
     ]
 });
-
-export default router;

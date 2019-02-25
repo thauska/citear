@@ -4,8 +4,13 @@
             <v-flex indigo lighten-3></v-flex>
             <v-flex indigo lighten-3 py-3 text-xs-center white--text xs12
                 >&copy; {{ new Date().getFullYear() }} —
-                <strong>CITE - NITAE²/UFPA</strong> <br />
-                Made with Vue.js
+                <strong>
+                    <a href="http://cite.ufpa.br" target="_blank"
+                        >CITE - NITAE²/UFPA</a
+                    >
+                </strong>
+                <br />
+                <a href="http://vuejs.org" target="_blank"> Made with Vue.js</a>
             </v-flex>
         </v-layout>
     </v-footer>
@@ -31,4 +36,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+a {
+    text-decoration: none;
+    color: white;
+}
+</style>
