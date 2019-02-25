@@ -5,7 +5,6 @@
             v-model="drawer"
             class="indigo lighten-4"
             enable-resize-watcher
-            clipped
         >
             <v-list>
                 <template v-for="(item, index) in items">

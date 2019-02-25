@@ -22,7 +22,19 @@
                     </v-flex>
                 </v-layout>
             </v-container>
+            <div
+                    style=" position: absolute; bottom: 50px; right: 10px;"
+                    class="white--text"
+                >
+                    <h6>
+                        Foto:
+                        <a href="https://unsplash.com/@steve_j" target="_blank"
+                            >Steve Johnson em Unsplash</a
+                        >
+                    </h6>
+                </div>
         </v-carousel-item>
+        
     </v-carousel>
 </template>
 
@@ -49,3 +61,10 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+a {
+    color: white;
+    text-decoration: none;
+}
+</style>

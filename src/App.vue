@@ -3,7 +3,6 @@
         <app-navigation></app-navigation>
         <vue-particles
             color="#5C6BC0"
-            shapeType="circle"
             :particleSize="3"
             linesColor="#9fa8da"
         ></vue-particles>
