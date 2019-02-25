@@ -4,7 +4,7 @@
             app
             v-model="drawer"
             class="indigo lighten-4"
-            enable-resize-watcher
+            disable-resize-watcher
         >
             <v-list>
                 <template v-for="(item, index) in items">
@@ -68,7 +68,6 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1024px){
-
+@media only screen and (max-width: 1024px) {
 }
 </style>

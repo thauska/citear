@@ -1,10 +1,6 @@
 <template>
     <v-carousel>
-        <v-carousel-item
-            v-for="(item, i) in items"
-            :key="i"
-            :src="item.src"
-        >
+        <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
             <v-container fill-height>
                 <v-layout align-center>
                     <v-flex
@@ -23,18 +19,17 @@
                 </v-layout>
             </v-container>
             <div
-                    style=" position: absolute; bottom: 50px; right: 10px;"
-                    class="white--text"
-                >
-                    <h6>
-                        Foto:
-                        <a href="https://unsplash.com/@steve_j" target="_blank"
-                            >Steve Johnson em Unsplash</a
-                        >
-                    </h6>
-                </div>
+                style=" position: absolute; bottom: 50px; right: 10px;"
+                class="white--text"
+            >
+                <h6>
+                    Foto:
+                    <a href="https://unsplash.com/@steve_j" target="_blank"
+                        >Steve Johnson em Unsplash</a
+                    >
+                </h6>
+            </div>
         </v-carousel-item>
-        
     </v-carousel>
 </template>
 
