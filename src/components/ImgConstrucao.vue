@@ -7,9 +7,10 @@
         </v-layout>
         <div>
             <v-img
-                :src="require('@/assets/img/construcao.jpg')"
+                :src="require('../assets/img/construcao.jpg')"
+                :lazy-src="require('../assets/img/construcao-min.jpg')"
                 contain
-                aspect-ratio="5"
+                alt="Imagem de construção"
             ></v-img>
         </div>
     </v-container>

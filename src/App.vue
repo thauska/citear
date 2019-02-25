@@ -3,9 +3,8 @@
         <app-navigation></app-navigation>
         <vue-particles
             color="#b3d4fc"
-            :particleOpacity="0.7"
             shapeType="circle"
-            :particleSize="4"
+            :particleSize="3"
             linesColor="#9fa8da"
         ></vue-particles>
         <v-content transition="slide-x-transition">
@@ -18,8 +17,8 @@
 </template>
 
 <script>
-import AppNavigation from '@/components/template/AppNavigation';
-import AppFooter from '@/components/template/AppFooter';
+import AppNavigation from './components/template/AppNavigation';
+import AppFooter from './components/template/AppFooter';
 
 export default {
     name: 'App',
@@ -35,7 +34,6 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
 }
 .shadow {

@@ -3,7 +3,7 @@
         <img-hero
             :style="{
                 'background-image':
-                    'url(' + require('../assets/img/hero1.jpg') + ')'
+                    'url(' + require('../assets/img/hero1-min.jpg') + ')'
             }"
             >Integrantes</img-hero
         >
@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import ImgHero from '@/components/ImgHero';
-import MembersDetails from '@/components/MembersDetails';
-import MembersDetails2 from '@/components/MembersDetails2';
-import MembersDetails3 from '@/components/MembersDetails3';
+import ImgHero from '../components/ImgHero';
+import MembersDetails from '../components/MembersDetails';
+import MembersDetails2 from '../components/MembersDetails2';
+import MembersDetails3 from '../components/MembersDetails3';
 
 export default {
     name: 'members',

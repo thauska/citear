@@ -101,7 +101,7 @@ export default {
     name: 'HomeDetails',
     data() {
         return {
-            img: '@/assets/logo.png'
+            img: '../assets/logo.png'
         };
     }
 };
