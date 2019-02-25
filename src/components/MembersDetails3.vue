@@ -58,7 +58,7 @@
                             </v-card-text>
                             <v-divider></v-divider>
                             <v-layout tag="v-card-text" text-xs-left wrap>
-                                 <v-flex tag="strong" xs5 text-xs-right mr-3 mb-2
+                                <v-flex tag="strong" xs5 text-xs-right mr-3 mb-2
                                     >Lattes:</v-flex
                                 >
                                 <v-flex>

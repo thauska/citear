@@ -20,7 +20,7 @@
             </v-container>
             <div
                 style=" position: absolute; bottom: 50px; right: 10px;"
-                class="white--text"
+                class="white--text shadow"
             >
                 <h6>
                     Foto:

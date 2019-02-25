@@ -9,6 +9,10 @@ export default new Router({
     base: '/citear/',
     routes: [
         {
+            path: '*',
+            redirect: '/index.html'
+        },
+        {
             path: '/',
             name: 'home',
             component: Home
