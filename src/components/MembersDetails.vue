@@ -1,11 +1,11 @@
 <template>
     <v-container>
-        <v-card xs12>
+        <v-card >
             <v-card-title class="secondary white--text headline"
                 >Pesquisadores</v-card-title
             >
-            <v-layout justify-space-between pa-3>
-                <v-flex xs6>
+            <v-layout justify-space-between pa-2 xs6 row wrap>
+                <v-flex style="overflow:auto;">
                     <v-treeview
                         :active.sync="active"
                         :items="pesquisadores"
@@ -25,7 +25,7 @@
                         >
                     </v-treeview>
                 </v-flex>
-                <v-flex d-flex text-xs-center xs6>
+                <v-flex text-xs-center>
                     <v-scroll-y-transition mode="out-in">
                         <div
                             v-if="!selectedP"
@@ -58,7 +58,7 @@
                             </v-card-text>
                             <v-divider></v-divider>
                             <v-layout tag="v-card-text" text-xs-left wrap>
-                                <v-flex tag="strong" text-xs-right mr-3 mb-2
+                                <v-flex tag="strong" xs5 text-xs-right mr-3 mb-2
                                     >Lattes:</v-flex
                                 >
                                 <v-flex>

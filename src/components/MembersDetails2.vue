@@ -4,8 +4,8 @@
             <v-card-title class="secondary white--text headline"
                 >Estudantes</v-card-title
             >
-            <v-layout justify-space-between pa-3>
-                <v-flex xs6>
+            <v-layout justify-space-between pa-2 xs6 row wrap>
+                <v-flex style="overflow:auto;">
                     <v-treeview
                         :active.sync="active"
                         :items="estudantes"
@@ -58,7 +58,7 @@
                             </v-card-text>
                             <v-divider></v-divider>
                             <v-layout tag="v-card-text" text-xs-left wrap>
-                                <v-flex tag="strong" xs5 text-xs-right mr-3 mb-2
+                                 <v-flex tag="strong" xs5 text-xs-right mr-3 mb-2
                                     >Lattes:</v-flex
                                 >
                                 <v-flex>
