@@ -1,10 +1,9 @@
 <template>
-    <v-carousel interval="9000">
+    <v-carousel>
         <v-carousel-item
             v-for="(item, i) in items"
             :key="i"
             :src="item.src"
-            transition="fade"
         >
             <v-container fill-height>
                 <v-layout align-center>

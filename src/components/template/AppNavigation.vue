@@ -1,11 +1,11 @@
 <template>
     <span>
         <v-navigation-drawer
-            floating
             app
             v-model="drawer"
             class="indigo lighten-4"
-            disable-resize-watcher
+            enable-resize-watcher
+            clipped
         >
             <v-list>
                 <template v-for="(item, index) in items">
@@ -67,5 +67,9 @@ export default {
 a {
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px){
+
 }
 </style>

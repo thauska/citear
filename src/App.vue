@@ -2,7 +2,7 @@
     <v-app id="app">
         <app-navigation></app-navigation>
         <vue-particles
-            color="#b3d4fc"
+            color="#5C6BC0"
             shapeType="circle"
             :particleSize="3"
             linesColor="#9fa8da"
@@ -35,6 +35,7 @@ export default {
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
 }
 .shadow {
     text-shadow: black 0.1em 0.1em 0.08em;
