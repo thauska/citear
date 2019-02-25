@@ -1,18 +1,18 @@
 <template>
     <span>
-        <home-hero></home-hero>
+        <home-carousel></home-carousel>
         <home-details></home-details>
     </span>
 </template>
 
 <script>
-import HomeHero from '../components/HomeHero';
+import HomeCarousel from '../components/HomeCarousel';
 import HomeDetails from '../components/HomeDetails';
 
 export default {
     name: 'home',
     components: {
-        HomeHero,
+        HomeCarousel,
         HomeDetails
     }
 };

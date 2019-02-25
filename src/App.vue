@@ -39,4 +39,28 @@ export default {
 .shadow {
     text-shadow: black 0.1em 0.1em 0.08em;
 }
+#app {
+    background-image: -webkit-radial-gradient(
+        closest-side,
+        rgba(255, 255, 255, 1) 0,
+        #e8eaf6 100%
+    );
+    background-image: -moz-radial-gradient(
+        closest-side,
+        rgba(255, 255, 255, 1) 0,
+        #e8eaf6 100%
+    );
+    background-image: radial-gradient(
+        closest-side,
+        rgba(255, 255, 255, 1) 0,
+        #e8eaf6 100%
+    );
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+}
 </style>

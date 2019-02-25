@@ -1,9 +1,10 @@
 <template>
     <span>
         <v-navigation-drawer
+            floating
             app
             v-model="drawer"
-            class="indigo lighten-5"
+            class="indigo lighten-4"
             disable-resize-watcher
         >
             <v-list>
@@ -17,7 +18,7 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-toolbar app color="indigo lighten-5">
+        <v-toolbar app color="indigo lighten-4">
             <v-toolbar-side-icon
                 class="hidden-md-and-up"
                 @click="drawer = !drawer"
