@@ -3,7 +3,7 @@
         <img-hero
             :style="{
                 'background-image':
-                    'url(' + require('../assets/img/hero5-min.jpg') + ')'
+                    'url(' + require('@/assets/img/hero5-min.jpg') + ')'
             }"
         >
             Contato
@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import ImgHero from '../components/ImgHero';
-import ContactDetails from '../components/ContactDetails';
+import ImgHero from '@/components/ImgHero';
+import ContactDetails from '@/components/ContactDetails';
 
 export default {
     name: 'contact',

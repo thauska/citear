@@ -3,7 +3,7 @@
         <img-hero
             :style="{
                 'background-image':
-                    'url(' + require('../assets/img/hero2-min.jpg') + ')'
+                    'url(' + require('@/assets/img/hero2-min.jpg') + ')'
             }"
         >
             Eventos
@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import ImgHero from '../components/ImgHero';
-import ImgConstrucao from '../components/ImgConstrucao';
+import ImgHero from '@/components/ImgHero';
+import ImgConstrucao from '@/components/ImgConstrucao';
 
 export default {
     name: 'events',

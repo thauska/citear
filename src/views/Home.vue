@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import HomeCarousel from '../components/HomeCarousel';
-import HomeDetails from '../components/HomeDetails';
+import HomeCarousel from '@/components/HomeCarousel';
+import HomeDetails from '@/components/HomeDetails';
 
 export default {
     name: 'home',

@@ -1,7 +1,14 @@
 <template>
     <v-footer height="auto" absolute app>
         <v-layout justify-center row wrap>
-            <v-flex indigo lighten-2 py-3 text-xs-center white--text xs12
+            <v-flex
+                indigo
+                lighten-3
+                py-3
+                text-xs-center
+                white--text
+                xs12
+                class="shadow"
                 >&copy; {{ new Date().getFullYear() }} —
                 <strong>
                     <a href="http://cite.ufpa.br" target="_blank"

@@ -1,5 +1,5 @@
 <template>
-    <v-parallax alt="teste" :src="require('../assets/homehero-min.jpg')">
+    <v-parallax alt="teste" :src="require('@/assets/homehero-min.jpg')">
         <v-layout>
             <v-layout align-center column justify-center class="shadow">
                 <div class="display-4 font-weight-black mb-3">

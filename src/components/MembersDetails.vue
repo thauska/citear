@@ -5,7 +5,7 @@
                 >Pesquisadores</v-card-title
             >
             <v-layout justify-space-between pa-2 xs6 row wrap>
-                <v-flex style="overflow:auto;">
+                <v-flex>
                     <v-treeview
                         :active.sync="active"
                         :items="pesquisadores"
@@ -25,12 +25,11 @@
                         >
                     </v-treeview>
                 </v-flex>
-                <v-flex text-xs-center>
+                <v-flex d-flex text-xs-center align-center mt-2>
                     <v-scroll-y-transition mode="out-in">
                         <div
                             v-if="!selectedP"
-                            class="title grey--text text--lighten-1 font-weight-light"
-                            style="align-self: center;"
+                            class="title grey--text font-weight-light"
                         >
                             Selecione um nome
                         </div>
@@ -68,7 +67,7 @@
                                     >
                                         <v-avatar :size="35">
                                             <img
-                                                src="../assets/img/icone_lattes.jpg"
+                                                src="@/assets/img/icone_lattes.jpg"
                                             />
                                         </v-avatar>
                                     </a>
@@ -171,4 +170,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.v-treeview-node__content,
+.v-treeview-node__label {
+    flex-shrink: 1;
+}
+.v-treeview-node__root {
+    height: auto;
+}
+</style>

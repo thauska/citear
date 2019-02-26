@@ -5,7 +5,7 @@
                 >Estudantes</v-card-title
             >
             <v-layout justify-space-between pa-2 xs6 row wrap>
-                <v-flex style="overflow:auto;">
+                <v-flex>
                     <v-treeview
                         :active.sync="active"
                         :items="estudantes"
@@ -25,11 +25,11 @@
                         >
                     </v-treeview>
                 </v-flex>
-                <v-flex d-flex text-xs-center>
+                <v-flex d-flex text-xs-center mt-2>
                     <v-scroll-y-transition mode="out-in">
                         <div
                             v-if="!selectedE"
-                            class="title grey--text text--lighten-1 font-weight-light"
+                            class="title grey--text font-weight-light"
                             style="align-self: center;"
                         >
                             Selecione um nome
@@ -68,7 +68,7 @@
                                     >
                                         <v-avatar :size="35">
                                             <img
-                                                src="../assets/img/icone_lattes.jpg"
+                                                src="@/assets/img/icone_lattes.jpg"
                                             />
                                         </v-avatar>
                                     </a>

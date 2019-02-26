@@ -3,7 +3,7 @@
         <img-hero
             :style="{
                 'background-image':
-                    'url(' + require('../assets/img/hero4-min.jpg') + ')'
+                    'url(' + require('@/assets/img/hero4-min.jpg') + ')'
             }"
             >Galeria</img-hero
         >
@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import ImgHero from '../components/ImgHero';
-import ImgConstrucao from '../components/ImgConstrucao';
+import ImgHero from '@/components/ImgHero';
+import ImgConstrucao from '@/components/ImgConstrucao';
 
 export default {
     name: 'gallery',
