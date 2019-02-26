@@ -1,7 +1,7 @@
 <template>
     <v-layout>
         <v-container>
-            <v-flex xs12 sm12>
+            <v-flex>
                 <v-card>
                     <v-card-title primary-title>
                         <div>
