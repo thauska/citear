@@ -10,10 +10,7 @@ import '@mdi/font/css/materialdesignicons.css';
 Vue.config.productionTip = false;
 Vue.use(VueParticles);
 
-const app = new Vue({
+new Vue({
     router,
     render: h => h(App)
 }).$mount('#app');
-if (window.Cypress) {
-    window.app = app;
-}

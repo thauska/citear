@@ -5,13 +5,8 @@ import Home from './views/Home.vue';
 Vue.use(Router);
 
 export default new Router({
-    mode: 'history',
-    base: '/citear/',
+    mode: 'hash',
     routes: [
-        {
-            path: '*',
-            redirect: '/index.html'
-        },
         {
             path: '/',
             name: 'home',
