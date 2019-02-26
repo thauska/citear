@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
+import Home from '@/views/Home.vue';
 
 Vue.use(Router);
 
 export default new Router({
-    mode: 'hash',
+    mode: 'history',
+    base: '/citear/dev/',
     routes: [
         {
             path: '/',
@@ -15,27 +16,27 @@ export default new Router({
         {
             path: '/integrantes',
             name: 'members',
-            component: () => import('./views/Members.vue')
+            component: () => import('@/views/Members.vue')
         },
         {
             path: '/eventos',
             name: 'events',
-            component: () => import('./views/Events.vue')
+            component: () => import('@/views/Events.vue')
         },
         {
             path: '/producao',
             name: 'producao',
-            component: () => import('./views/Producao.vue')
+            component: () => import('@/views/Producao.vue')
         },
         {
             path: '/galeria',
             name: 'gallery',
-            component: () => import('./views/Gallery.vue')
+            component: () => import('@/views/Gallery.vue')
         },
         {
             path: '/contatos',
             name: 'contact',
-            component: () => import('./views/Contact.vue')
+            component: () => import('@/views/Contact.vue')
         }
     ]
 });

@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-layout column>
+        <v-layout column align-center>
             <div class="display-1 font-weight-dark mb-4 mt-4">
                 Página em Construção
             </div>
