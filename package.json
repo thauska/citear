@@ -1,71 +1,71 @@
 {
-  "name": "citear",
-  "description": "Grupo de Pesquisa CiTeAr UFPA",
-  "version": "0.1.0",
-  "private": true,
-  "author": {
-    "name": "Thayana Mamoré",
-    "email": "thayanacmamore@gmail.com"
-  },
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.0.0-rc.1",
-    "@mdi/font": "^2.6.95",
-    "roboto-fontface": "*",
-    "vue": "^2.5.22",
-    "vue-router": "^3.0.1",
-    "vuetify": "^1.3.0",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "@vue/eslint-config-prettier": "^4.0.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "vue-cli-plugin-vuetify": "^0.4.6",
-    "vue-particles": "^1.0.9",
-    "vue-template-compiler": "^2.5.21",
-    "webpack": "^4.29.5",
-    "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^2.11.3",
-    "webpack-merge": "^4.1.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "citear",
+    "description": "Grupo de Pesquisa CiTeAr UFPA",
+    "version": "0.1.0",
+    "private": true,
+    "author": {
+        "name": "Thayana Mamoré",
+        "email": "thayanacmamore@gmail.com"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "@vue/prettier"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "prettier": {
-    "tabWidth": 4,
-    "singleQuote": true
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 10"
-  ]
-  
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.0.0-rc.1",
+        "@mdi/font": "^2.6.95",
+        "roboto-fontface": "*",
+        "vue": "^2.5.22",
+        "vue-router": "^3.0.1",
+        "vuetify": "^1.3.0",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.4.0",
+        "@vue/cli-plugin-eslint": "^3.4.0",
+        "@vue/cli-service": "^3.4.0",
+        "@vue/eslint-config-prettier": "^4.0.1",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.8.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "vue-cli-plugin-vuetify": "^0.4.6",
+        "vue-particles": "^1.0.9",
+        "vue-template-compiler": "^2.5.21",
+        "webpack": "^4.29.5",
+        "webpack-bundle-analyzer": "^2.9.0",
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": ">=3.1.11",
+        "webpack-merge": "^4.1.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "@vue/prettier"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 10"
+    ]
+
 }
