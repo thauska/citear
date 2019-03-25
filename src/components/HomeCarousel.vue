@@ -4,15 +4,18 @@
             <v-container fill-height>
                 <v-layout align-center>
                     <v-flex
-                        class="text-md-center text-lg-center text-sm-center white--text shadow"
+                        class="text-md-center text-lg-center text-sm-center white--text"
                     >
-                        <h3 class="display-4 font-weight-black mb-3">
+                        <h3 class="display-4 font-weight-black mb-3 shadow">
                             {{ namePage }}
                         </h3>
-                        <div class="display-1 font-weight-bold mb-3">
+                        <div class="display-1 font-weight-bold mb-3 shadow">
                             {{ subName1 }}
                         </div>
-                        <div class="display-1 font-weight-light mb-3">
+                        <div
+                            class="display-3 mb-3 shadow"
+                            style="font-family: 'Allura', cursive !important;"
+                        >
                             {{ subName2 }}
                         </div>
                     </v-flex>
@@ -61,5 +64,10 @@ export default {
 a {
     color: white;
     text-decoration: none;
+}
+
+h3.display-4 {
+    font-family: 'Allura', cursive !important;
+    letter-spacing: normal !important;
 }
 </style>

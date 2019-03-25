@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-card>
+        <v-card color="rgb(232,234,246, 0.8)">
             <v-card-title class="secondary white--text headline"
                 >Pesquisadores</v-card-title
             >

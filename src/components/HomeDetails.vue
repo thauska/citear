@@ -4,19 +4,21 @@
             <v-flex
                 class="display-2 text-xs-center my-5 title_gl font-weight-medium"
                 >Grupo de Pesquisa CiTeAr
-                <v-flex class="display-1 text-xs-center my-2 font-weight-light"
+                <v-flex
+                    class="display-3 text-xs-center mt-3 font-weight-light"
+                    style="font-family: 'Allura', cursive !important;"
                     >Ciência, Tecnologia e Arte</v-flex
                 >
             </v-flex>
-            <v-card>
+            <v-card color="rgb(232,234,246, 0.8)">
                 <v-layout row wrap>
                     <v-flex xs12 lg12>
                         <v-card-title primary-title>
-                            <div>
+                            <!-- <div>
                                 <h3 class="headline font-weight-medium">
                                     Repercussão dos trabalhos do grupo
                                 </h3>
-                            </div>
+                            </div> -->
                         </v-card-title>
                         <v-container>
                             <div class="subheading">
@@ -62,7 +64,7 @@
                             </div>
                         </v-container>
                     </v-flex>
-                    <v-flex xs12 lg6>
+                    <v-flex xs12 lg4>
                         <v-card-title>
                             <div>
                                 <h3 class="headline font-weight-medium">
@@ -77,7 +79,7 @@
                             </p>
                         </v-container>
                     </v-flex>
-                    <v-flex xs12 lg6>
+                    <v-flex xs12 lg4>
                         <v-card-title>
                             <div>
                                 <h3 class="headline font-weight-medium">
@@ -86,8 +88,10 @@
                             </div>
                         </v-card-title>
                         <v-container>
-                            <p class="subheading">Cristina Lúcia Dias Vaz</p>
-                            <p class="subheading">Iran Abreu Mendes</p>
+                            <p class="subheading">
+                                Cristina Lúcia Dias Vaz <br />
+                                Iran Abreu Mendes
+                            </p>
                         </v-container>
                     </v-flex>
                 </v-layout>

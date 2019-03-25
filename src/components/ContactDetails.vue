@@ -2,7 +2,7 @@
     <v-layout>
         <v-container>
             <v-flex>
-                <v-card>
+                <v-card color="rgb(232,234,246, 0.8)">
                     <v-card-title primary-title>
                         <div>
                             <h3 class="headline mb-4 font-weight-bold">
@@ -28,7 +28,8 @@
                     <v-card-content>
                         <v-img
                             :src="require('@/assets/img/ufpa-frente.jpg')"
-                            aspect-ratio="2.5"
+                            aspect-ratio="2.8"
+                            contain
                             alt="Frente da UFPA"
                             gradient="to bottom left, rgba(179,212,252,.09), rgba(179,212,252,.2)"
                         ></v-img>

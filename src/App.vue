@@ -29,6 +29,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Allura');
+
 #particles-js {
     position: fixed;
     top: 0;
@@ -37,7 +39,7 @@ export default {
     width: 100%;
 }
 .shadow {
-    text-shadow: black 0.1em 0.1em 0.08em;
+    text-shadow: black 0.1em 0.07em 0.07em;
 }
 #app {
     background-image: -webkit-radial-gradient(

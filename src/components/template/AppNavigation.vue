@@ -24,7 +24,12 @@
             ></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <v-toolbar-title>
-                <router-link to="/" tag="span" style="cursor: pointer">
+                <router-link
+                    to="/"
+                    tag="span"
+                    class="font-weight-black"
+                    style="cursor: pointer; font-family: 'Allura', cursive !important;"
+                >
                     {{ appTitle }}
                 </router-link>
             </v-toolbar-title>
