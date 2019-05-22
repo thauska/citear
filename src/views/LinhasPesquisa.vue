@@ -5,7 +5,9 @@
                 'background-image':
                     'url(' + require('@/assets/img/hero-6.jpg') + ')'
             }"
-            >Linhas de Pesquisa</img-hero>
+        >
+            Linhas de Pesquisa
+        </img-hero>
         <PesquisaDetails />
     </div>
 </template>

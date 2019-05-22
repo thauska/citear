@@ -13,13 +13,6 @@
             <v-card color="rgb(232,234,246, 0.8)">
                 <v-layout row wrap>
                     <v-flex xs12 lg12>
-                        <v-card-title primary-title>
-                            <!-- <div>
-                                <h3 class="headline font-weight-medium">
-                                    Repercussão dos trabalhos do grupo
-                                </h3>
-                            </div> -->
-                        </v-card-title>
                         <v-container>
                             <div class="subheading">
                                 <p>
@@ -63,7 +56,7 @@
                                 </ul>
                             </div>
                         </v-container>
-                    </v-flex>                    
+                    </v-flex>
                     <v-flex xs12 lg12>
                         <v-card-title>
                             <div>

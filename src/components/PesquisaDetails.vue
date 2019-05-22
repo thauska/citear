@@ -7,16 +7,14 @@
                         <v-card-title primary-title>
                             <div>
                                 <h3 class="headline font-weight-medium">
-                                    Criatividade e Inovação em Ciência, Tecnologia e Arte
+                                    Criatividade e Inovação em Ciência,
+                                    Tecnologia e Arte
                                 </h3>
                             </div>
                         </v-card-title>
                         <v-container>
                             <div class="subheading">
-                                <p>
-                                    Em breve mais informações...
-                                </p>
-                        
+                                <p>Em breve mais informações...</p>
                             </div>
                         </v-container>
                     </v-flex>
@@ -38,7 +36,6 @@ export default {
 </script>
 
 <style scoped>
-
 li {
     list-style-type: upper-roman;
 }
