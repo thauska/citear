@@ -18,6 +18,11 @@ export default new Router({
             component: () => import('@/views/Members.vue')
         },
         {
+            path: '/linhas-de-pesquisa',
+            name: 'linhas-de-pesquisa',
+            component: () => import('@/views/LinhasPesquisa.vue')
+        },
+        {
             path: '/eventos',
             name: 'events',
             component: () => import('@/views/Events.vue')

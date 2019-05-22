@@ -63,23 +63,8 @@
                                 </ul>
                             </div>
                         </v-container>
-                    </v-flex>
-                    <v-flex xs12 lg4>
-                        <v-card-title>
-                            <div>
-                                <h3 class="headline font-weight-medium">
-                                    Linhas de pesquisa
-                                </h3>
-                            </div>
-                        </v-card-title>
-                        <v-container>
-                            <p class="subheading">
-                                Criatividade e Inovação em Ciência, Tecnologia e
-                                Arte
-                            </p>
-                        </v-container>
-                    </v-flex>
-                    <v-flex xs12 lg4>
+                    </v-flex>                    
+                    <v-flex xs12 lg12>
                         <v-card-title>
                             <div>
                                 <h3 class="headline font-weight-medium">

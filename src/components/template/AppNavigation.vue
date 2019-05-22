@@ -55,10 +55,11 @@ export default {
             appTitle: 'CiTeAr',
             drawer: false,
             items: [
-                { title: 'Início', url: '/' },
+                { title: 'Apresentação', url: '/' },
                 { title: 'Integrantes', url: '/integrantes' },
-                { title: 'Eventos', url: '/eventos' },
+                { title: 'Linhas de Pesquisa', url: '/linhas-de-pesquisa' },
                 { title: 'Produção', url: '/producao' },
+                { title: 'Eventos', url: '/eventos' },
                 { title: 'Galeria', url: '/galeria' },
                 { title: 'Contato', url: '/contatos' }
             ]
