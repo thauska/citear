@@ -19,10 +19,10 @@
         </v-navigation-drawer>
         <v-toolbar app color="indigo lighten-4">
             <v-toolbar-side-icon
-                class="hidden-md-and-up"
+                class="hidden-lg-and-up"
                 @click="drawer = !drawer"
             ></v-toolbar-side-icon>
-            <v-spacer class="hidden-md-and-up"></v-spacer>
+            <v-spacer class="hidden-lg-and-up"></v-spacer>
             <v-toolbar-title>
                 <router-link
                     to="/"
