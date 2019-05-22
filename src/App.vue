@@ -30,6 +30,16 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Allura');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+.display-4,
+.display-3,
+.display-2,
+.display-1,
+.headline,
+.v-btn__content {
+    font-family: 'Kaushan Script', cursive !important;
+}
 
 #particles-js {
     position: fixed;
@@ -42,6 +52,7 @@ export default {
     text-shadow: black 0.1em 0.07em 0.07em;
 }
 #app {
+    font-family: 'Josefin Slab', serif !important;
     background-image: -webkit-radial-gradient(
         closest-side,
         rgba(255, 255, 255, 1) 0,
