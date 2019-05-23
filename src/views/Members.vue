@@ -9,9 +9,7 @@
         >
         <v-layout column>
             <v-container>
-                <members-details></members-details>
-                <members-details2></members-details2>
-                <members-details3></members-details3>
+                
             </v-container>
         </v-layout>
     </span>
