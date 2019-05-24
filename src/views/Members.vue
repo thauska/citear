@@ -9,7 +9,7 @@
         >
         <v-layout column>
             <v-container>
-                
+                <MembersDetails />
             </v-container>
         </v-layout>
     </span>
@@ -18,16 +18,12 @@
 <script>
 import ImgHero from '@/components/ImgHero';
 import MembersDetails from '@/components/MembersDetails';
-import MembersDetails2 from '@/components/MembersDetails2';
-import MembersDetails3 from '@/components/MembersDetails3';
 
 export default {
     name: 'members',
     components: {
         ImgHero,
-        MembersDetails,
-        MembersDetails2,
-        MembersDetails3
+        MembersDetails
     }
 };
 </script>

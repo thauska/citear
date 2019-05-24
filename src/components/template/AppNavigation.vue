@@ -74,6 +74,7 @@ a {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 1024px) {
+.v-btn{
+  font-size: 12px;
 }
 </style>

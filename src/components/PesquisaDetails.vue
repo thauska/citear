@@ -27,11 +27,6 @@
 <script>
 export default {
     name: 'PesquisaDetails',
-    data() {
-        return {
-            img: '@/assets/logo.png'
-        };
-    }
 };
 </script>
 
