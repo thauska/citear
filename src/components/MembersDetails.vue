@@ -67,7 +67,7 @@
                             {{ estudantes.name }}
                         </h3>
                         <div class="blue--text mb-2">
-                            <strong>Titulação Máxima:</strong>
+                            <strong>Nível de treinamento:</strong>
                             {{ estudantes.titulacao }}
                         </div>
                     </v-card-text>
@@ -113,7 +113,7 @@
                             {{ estrangeiros.name }}
                         </h3>
                         <div class="blue--text mb-2">
-                            <strong>Titulação Máxima:</strong>
+                            <strong>País:</strong>
                             {{ estrangeiros.titulacao }}
                         </div>
                     </v-card-text>
@@ -222,7 +222,7 @@ export default {
             {
                 id: 3,
                 name: 'Glenda Quaresma Alves',
-                titulacao: 'Mestrado Profissional',
+                titulacao: 'Especialização',
                 website: 'http://lattes.cnpq.br/2550098149452983',
                 img:
                     'http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8169236J3'
@@ -230,7 +230,7 @@ export default {
             {
                 id: 4,
                 name: 'Helena do Socorro Campos da Rocha',
-                titulacao: 'Não há formação em andamento',
+                titulacao: 'Mestrado Profissional',
                 website: 'http://lattes.cnpq.br/3955516512057842',
                 img:
                     'http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4775464U9'
@@ -278,7 +278,7 @@ export default {
             {
                 id: 10,
                 name: 'Mayara de Oliveira Vieira',
-                titulacao: 'Graduação',
+                titulacao: 'Mestrado Profissional',
                 website: 'http://lattes.cnpq.br/4849296736177942',
                 img:
                     'http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8981647U2'
