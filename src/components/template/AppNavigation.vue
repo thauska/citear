@@ -41,8 +41,7 @@
                 v-for="item in items"
                 :key="item.title"
                 :to="item.url"
-                >{{ item.title }}</v-btn
-            >
+                >{{ item.title }}</v-btn>
         </v-toolbar>
     </span>
 </template>
@@ -57,11 +56,14 @@ export default {
             items: [
                 { title: 'Apresentação', url: '/' },
                 { title: 'Integrantes', url: '/integrantes' },
-                { title: 'Linhas de Pesquisa', url: '/linhas-de-pesquisa' },
+                { title: 'Linha de Pesquisa', url: '/linhas-de-pesquisa' },
                 { title: 'Produção', url: '/producao' },
                 { title: 'Eventos', url: '/eventos' },
                 { title: 'Galeria', url: '/galeria' },
                 { title: 'Contato', url: '/contatos' }
+            ],
+            subitems: [
+                {title: ''}
             ]
         };
     }

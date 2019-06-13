@@ -30,7 +30,20 @@ export default new Router({
         {
             path: '/producao',
             name: 'producao',
-            component: () => import('@/views/Producao.vue')
+            component: () => import('@/views/Producao.vue'),
+            // children: [{
+            //     name: 'Artigos de Periódicos',
+            //     path: '/articles'
+            // },
+            // {
+            //     name: 'Resumos em Eventos',
+            //     path:'/resumes'},
+            // {   name: 'Livros',
+            //     path: '/books'},
+            // {   name: 'REA',
+            //     path: '/rea'},
+            // {   name: 'Outros',
+            //     path: '/outros'}]
         },
         {
             path: '/galeria',

@@ -22,18 +22,19 @@
                                     <br />Belém - Pará - Brasil
                                 </p>
                                 <p>Contato: (91) 3201-7834</p>
+                                <p>E-mails: cvaz@ufpa.br/ iamendes1@gmail.com</p>
                             </div>
                         </div>
                     </v-card-title>
-                    <v-card-content>
+                    <div>
                         <v-img
                             :src="require('@/assets/img/ufpa-frente.jpg')"
-                            aspect-ratio="2.8"
+                            aspect-ratio="3"
                             contain
                             alt="Frente da UFPA"
                             gradient="to bottom left, rgba(179,212,252,.09), rgba(179,212,252,.2)"
                         ></v-img>
-                    </v-card-content>
+                    </div>
                 </v-card>
             </v-flex>
         </v-container>
