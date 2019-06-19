@@ -1,25 +1,22 @@
 <template>
     <span>
-        <img-hero
-            :style="{
-                'background-image':
-                    'url(' + require('@/assets/img/hero5-min.jpg') + ')'
-            }"
-        >
-            Contato
-        </img-hero>
+        <HomeCarousel />
+        <v-flex
+            class="display-2 text-xs-center my-4 title_gl font-weight-medium"
+            >Contato
+        </v-flex>
         <contact-details></contact-details>
     </span>
 </template>
 
 <script>
-import ImgHero from '@/components/ImgHero';
+import HomeCarousel from '@/components/HomeCarousel';
 import ContactDetails from '@/components/ContactDetails';
 
 export default {
     name: 'contact',
     components: {
-        ImgHero,
+        HomeCarousel,
         ContactDetails
     }
 };

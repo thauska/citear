@@ -1,25 +1,22 @@
 <template>
     <div>
-        <img-hero
-            :style="{
-                'background-image':
-                    'url(' + require('@/assets/img/hero-6.jpg') + ')'
-            }"
-        >
-            Linha de Pesquisa
-        </img-hero>
+        <HomeCarousel />
+        <v-flex
+                class="display-2 text-xs-center my-4 title_gl font-weight-medium"
+                >Linha de Pesquisa
+            </v-flex>
         <PesquisaDetails />
     </div>
 </template>
 
 <script>
-import ImgHero from '@/components/ImgHero';
+import HomeCarousel from '@/components/HomeCarousel';
 import PesquisaDetails from '@/components/PesquisaDetails';
 
 export default {
     name: 'linhas-de-pesquisa',
     components: {
-        ImgHero,
+        HomeCarousel,
         PesquisaDetails
     }
 };

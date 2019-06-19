@@ -1,22 +1,16 @@
 <template>
 <v-carousel hide-controls hide-delimiters height="220">
     <v-carousel-item
-      v-for="color in colors"
-      :key="color"
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
     >
-      <v-sheet
-        :color="color"
-        height="100%"
-        tile
-      >
         <v-layout
           align-center
           fill-height
           justify-center
         >
-          <v-flex
-                        class="text-md-center text-lg-center text-sm-center white--text"
-                    >
+          <v-flex class="text-md-center text-lg-center text-sm-center white--text">
                         <h3 class="display-4 font-weight-black shadow">
                             {{ namePage }}
                         </h3>
@@ -28,7 +22,6 @@
                         </div>
             </v-flex>
         </v-layout>
-      </v-sheet>
     </v-carousel-item>
   </v-carousel>
 </template>
@@ -40,8 +33,8 @@ export default {
         return {
             namePage: 'CiTeAr',
             subName2: 'Ciência, Tecnologia e Arte',
-            colors: [
-                'purple'
+            items: [
+                { src: require('@/assets/img/banner.png') }
             ]
         };
     }

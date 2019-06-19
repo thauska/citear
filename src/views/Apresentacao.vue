@@ -1,24 +1,18 @@
 <template>
     <span>
-        <img-hero
-            :style="{
-                'background-image':
-                    'url(' + require('@/assets/homehero-min.jpg') + ')'
-            }"
-            >Apresentação</img-hero
-        >
+        <HomeCarousel />
         <apresentacao-details></apresentacao-details>
     </span>
 </template>
 
 <script>
-import ImgHero from '@/components/ImgHero';
+import HomeCarousel from '@/components/HomeCarousel';
 import ApresentacaoDetails from '@/components/ApresentacaoDetails';
 
 export default {
     name: 'apresen',
     components: {
-        ImgHero,
+        HomeCarousel,
         ApresentacaoDetails
     }
 };

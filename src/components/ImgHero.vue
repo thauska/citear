@@ -12,12 +12,6 @@
             style=" position: absolute; bottom: 0; right: 10px;"
             class="white--text shadow"
         >
-            <h6>
-                Foto:
-                <a href="https://unsplash.com/@steve_j" target="_blank"
-                    >Steve Johnson em Unsplash</a
-                >
-            </h6>
         </div>
     </v-container>
 </template>

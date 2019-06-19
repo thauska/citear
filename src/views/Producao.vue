@@ -1,24 +1,22 @@
 <template>
     <span>
-        <img-hero
-            :style="{
-                'background-image':
-                    'url(' + require('@/assets/img/hero3-min.jpg') + ')'
-            }"
-            >Produção</img-hero
-        >
+        <HomeCarousel />
+        <v-flex
+            class="display-2 text-xs-center my-4 title_gl font-weight-medium"
+            >Produção
+        </v-flex>
         <ImgConstrucao />        
     </span>
 </template>
 
 <script>
-import ImgHero from '@/components/ImgHero';
+import HomeCarousel from '@/components/HomeCarousel';
 import ImgConstrucao from '@/components/ImgConstrucao';
 
 export default {
     name: 'producao',
     components: {
-        ImgHero,
+        HomeCarousel,
         ImgConstrucao
     }
 };

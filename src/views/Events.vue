@@ -1,25 +1,22 @@
 <template>
     <span>
-        <img-hero
-            :style="{
-                'background-image':
-                    'url(' + require('@/assets/img/hero2-min.jpg') + ')'
-            }"
-        >
-            Eventos
-        </img-hero>
+        <HomeCarousel />
+        <v-flex
+            class="display-2 text-xs-center my-4 title_gl font-weight-medium"
+            >Eventos
+        </v-flex>
         <img-construcao></img-construcao>
     </span>
 </template>
 
 <script>
-import ImgHero from '@/components/ImgHero';
+import HomeCarousel from '@/components/HomeCarousel';
 import ImgConstrucao from '@/components/ImgConstrucao';
 
 export default {
     name: 'events',
     components: {
-        ImgHero,
+        HomeCarousel,
         ImgConstrucao
     }
 };

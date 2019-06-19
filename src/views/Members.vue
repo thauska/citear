@@ -1,13 +1,11 @@
 <template>
     <span>
-        <img-hero
-            :style="{
-                'background-image':
-                    'url(' + require('@/assets/img/hero1-min.jpg') + ')'
-            }"
-            >Integrantes</img-hero
-        >
+        <HomeCarousel />
         <v-layout column>
+            <v-flex
+                class="display-2 text-xs-center my-4 title_gl font-weight-medium"
+                >Integrantes
+            </v-flex>
             <v-container>
                 <MembersDetails />
             </v-container>
@@ -16,13 +14,13 @@
 </template>
 
 <script>
-import ImgHero from '@/components/ImgHero';
+import HomeCarousel from '@/components/HomeCarousel';
 import MembersDetails from '@/components/MembersDetails';
 
 export default {
     name: 'members',
     components: {
-        ImgHero,
+        HomeCarousel,
         MembersDetails
     }
 };

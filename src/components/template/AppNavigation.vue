@@ -3,7 +3,7 @@
         <v-navigation-drawer
             app
             v-model="drawer"
-            class="indigo lighten-4"
+            class="indigo lighten-3"
             disable-resize-watcher
         >
             <v-list>
@@ -21,7 +21,7 @@
                 </template>
             </v-list>
         </v-navigation-drawer>
-        <v-toolbar app color="indigo lighten-4">
+        <v-toolbar app color="indigo lighten-3">
             <v-toolbar-side-icon
                 class="hidden-lg-and-up"
                 @click="drawer = !drawer"

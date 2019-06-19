@@ -77,4 +77,15 @@ export default {
     -webkit-background-size: auto auto;
     background-size: auto auto;
 }
+
+.title_gl {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-bottom-color: rgba(240, 240, 240, 1);
+    border-top-color: rgba(240, 240, 240, 1);
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-bottom-width: 5px;
+    border-top-width: 5px;
+}
 </style>
