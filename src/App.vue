@@ -37,6 +37,7 @@ export default {
 .display-2,
 .display-1,
 .headline,
+.title,
 .v-btn__content {
     font-family: 'Kaushan Script', cursive !important;
 }
@@ -49,7 +50,7 @@ export default {
     width: 100%;
 }
 .shadow {
-    text-shadow: black 0.1em 0.07em 0.07em;
+    text-shadow: rgb(34, 33, 33) 0.04em 0.04em 0.04em;
 }
 #app {
     font-family: 'Josefin Slab', serif !important;

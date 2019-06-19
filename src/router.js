@@ -1,6 +1,13 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/views/Home.vue';
+import Apresentacao from '@/views/Apresentacao.vue';
+import Members from '@/views/Members.vue';
+import LinhasPesquisa from '@/views/LinhasPesquisa.vue';
+import Events from '@/views/Events.vue';
+import Producao from '@/views/Producao.vue';
+import Gallery from '@/views/Gallery.vue';
+import Contact from '@/views/Contact.vue';
 
 Vue.use(Router);
 
@@ -13,47 +20,56 @@ export default new Router({
             component: Home
         },
         {
+            path: '/apresentacao',
+            name: 'apresentacao',
+            component: Apresentacao
+        },
+        {
             path: '/integrantes',
             name: 'members',
-            component: () => import('@/views/Members.vue')
+            component: Members
         },
         {
             path: '/linhas-de-pesquisa',
             name: 'linhas-de-pesquisa',
-            component: () => import('@/views/LinhasPesquisa.vue')
+            component: LinhasPesquisa
         },
         {
             path: '/eventos',
             name: 'events',
-            component: () => import('@/views/Events.vue')
+            component: Events
         },
         {
             path: '/producao',
             name: 'producao',
-            component: () => import('@/views/Producao.vue'),
-            // children: [{
-            //     name: 'Artigos de Periódicos',
-            //     path: '/articles'
-            // },
-            // {
-            //     name: 'Resumos em Eventos',
-            //     path:'/resumes'},
-            // {   name: 'Livros',
-            //     path: '/books'},
-            // {   name: 'REA',
-            //     path: '/rea'},
-            // {   name: 'Outros',
-            //     path: '/outros'}]
+            component: Producao,
+            children: [
+                {
+                    name: 'Artigos de Periódicos',
+                    path: 'articles'
+                },
+                {
+                    name: 'Resumos em Eventos',
+                    path: 'resumos'
+                },
+                {
+                    name: 'Livros',
+                    path: 'livros',
+                    component: () => import('@/components/Producao/Livros.vue')
+                },
+                { name: 'REA', path: 'rea' },
+                { name: 'Outros', path: 'outros' }
+            ]
         },
         {
             path: '/galeria',
             name: 'gallery',
-            component: () => import('@/views/Gallery.vue')
+            component: Gallery
         },
         {
             path: '/contatos',
             name: 'contact',
-            component: () => import('@/views/Contact.vue')
+            component: Contact
         }
     ]
 });

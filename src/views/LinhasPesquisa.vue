@@ -6,7 +6,7 @@
                     'url(' + require('@/assets/img/hero-6.jpg') + ')'
             }"
         >
-            Linhas de Pesquisa
+            Linha de Pesquisa
         </img-hero>
         <PesquisaDetails />
     </div>

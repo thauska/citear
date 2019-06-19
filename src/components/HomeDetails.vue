@@ -1,91 +1,44 @@
 <template>
-    <v-container>
-        <v-layout column mb-4>
-            <v-flex
-                class="display-2 text-xs-center my-5 title_gl font-weight-medium"
-                >Grupo de Pesquisa CiTeAr
-                <v-flex
-                    class="display-3 text-xs-center mt-3 font-weight-light"
-                    style="font-family: 'Allura', cursive !important;"
-                    >Ciência, Tecnologia e Arte</v-flex
-                >
+    <v-container grid-list-sm>
+        <v-layout justify-center align-center wrap>
+            <v-flex xl12 lg12 md12 sm12 xs12>
+                    <v-img
+                        :src="require('@/assets/img/eventos/mathart/cartaz.jpg')"
+                        contain
+                        alt="Cartaz I Seminário de Matemática e Arte"
+                        height="1000"
+                    ></v-img>
             </v-flex>
-            <v-card color="rgb(232,234,246, 0.8)">
-                <v-layout row wrap>
-                    <v-flex xs12 lg12>
-                        <v-container>
-                            <div class="subheading">
-                                <p>
-                                    O grupo de pesquisa Ciência, Tecnologia e
-                                    Arte é um grupo de natureza interdisciplinar
-                                    que tem como características principais a
-                                    experimentação, a reflexão e a divulgação de
-                                    pesquisas oriundas das conexões, relações e
-                                    intersecções entre Ciência, Tecnologia e
-                                    Arte. Suas principais metas são:
-                                </p>
-                                <ul>
-                                    <li>
-                                        Criar um espaço multidisciplinar,
-                                        criativo e inovador para experimentação
-                                        e desenvolvimento de pesquisa que
-                                        envolvam Ciência, Tecnologia e Arte;
-                                    </li>
-                                    <br />
-                                    <li>
-                                        Estimular práticas de experimentação,
-                                        produção e pesquisa em metodologias e
-                                        processos inovadores aplicados ao ensino
-                                        superior que envolvam Ciência, Arte e
-                                        Tecnologia;
-                                    </li>
-                                    <br />
-                                    <li>
-                                        Complementar a formação de profissionais
-                                        nas áreas envolvidas para atuação em
-                                        pesquisa integrada e atrair
-                                        pesquisadores nacionais e
-                                        internacionais. Entre os trabalhos já
-                                        realizados destacamos: ebooks,
-                                        animações, vídeos, apresentação em
-                                        congressos nacionais e internacionais,
-                                        orientações de iniciação científica,
-                                        palestras, oficinas e minicursos.
-                                    </li>
-                                    <br />
-                                </ul>
-                            </div>
-                        </v-container>
-                    </v-flex>
-                    <v-flex xs12 lg12>
-                        <v-card-title>
-                            <div>
-                                <h3 class="headline font-weight-medium">
-                                    Lideres do Grupo
-                                </h3>
-                            </div>
-                        </v-card-title>
-                        <v-container>
-                            <p class="subheading">
-                                Cristina Lúcia Dias Vaz <br />
-                                Iran Abreu Mendes
-                            </p>
-                        </v-container>
-                    </v-flex>
-                </v-layout>
-            </v-card>
+            <v-flex xl12 lg12 md12 sm12 xs12 class="my-2">
+                    <v-img
+                        :src="require('@/assets/img/eventos/mathart/pg1.png')"
+                        contain
+                        alt="Apresentação I Seminário de Matemática e Arte"
+                        height="1000"
+                    ></v-img>
+            </v-flex>
+            <v-layout justify-center align-center wrap class="my-4">
+                <v-btn
+                color="indigo lighten-2"
+                href="files/mathart/programacao.pdf"
+                download>
+                    <span>Baixe a Programação Completa</span>
+                </v-btn>
+                <v-btn
+                color="indigo lighten-2"
+                href="http://criar.ufpa.br"
+                target="_blank"
+                download>
+                    <span>Acesse o site do CR3IAR</span>
+                </v-btn>
+            </v-layout>
         </v-layout>
     </v-container>
 </template>
 
 <script>
 export default {
-    name: 'HomeDetails',
-    data() {
-        return {
-            img: '@/assets/logo.png'
-        };
-    }
+    name: 'homedetails'
 };
 </script>
 

@@ -1,20 +1,40 @@
 <template>
     <v-container grid-list-lg>
         <div class="text-xs-center">
-             <v-flex class="display-1 text-xs-center my-2 font-weight-medium">Pesquisadores</v-flex>
+            <v-flex class="display-1 text-xs-center my-2 font-weight-medium"
+                >Pesquisadores</v-flex
+            >
         </div>
         <v-layout wrap class="mb-4">
-            <v-flex xs12 sm4 md3 class="text-xs-center"
+            <v-flex
+                xs12
+                sm4
+                md3
+                class="text-xs-center"
                 v-for="pesquisadores in pesquisador"
-                :key="pesquisadores.id">
-                <v-card color="rgb(232,234,246, 0.8)"               
-                class="pt-4 mx-auto" flat
-                max-width="400" min-height="330">
+                :key="pesquisadores.id"
+            >
+                <v-card
+                    color="rgb(232,234,246, 0.8)"
+                    class="pt-4 mx-auto"
+                    flat
+                    max-width="400"
+                    min-height="330"
+                >
                     <v-card-text>
                         <v-avatar size="88">
                             <v-img :src="pesquisadores.img" class="mb-4">
-                                <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
-                                    <v-progress-circular indeterminate color="grey darken-5"></v-progress-circular>
+                                <v-layout
+                                    slot="placeholder"
+                                    fill-height
+                                    align-center
+                                    justify-center
+                                    ma-0
+                                >
+                                    <v-progress-circular
+                                        indeterminate
+                                        color="grey darken-5"
+                                    ></v-progress-circular>
                                 </v-layout>
                             </v-img>
                         </v-avatar>
@@ -46,20 +66,40 @@
             </v-flex>
         </v-layout>
         <div class="text-xs-center">
-             <v-flex class="display-2 text-xs-center my-2 font-weight-medium">Estudantes</v-flex>
+            <v-flex class="display-2 text-xs-center my-2 font-weight-medium"
+                >Estudantes</v-flex
+            >
         </div>
         <v-layout wrap class="mb-4">
-            <v-flex xs12 sm4 md3 class="text-xs-center"
+            <v-flex
+                xs12
+                sm4
+                md3
+                class="text-xs-center"
                 v-for="estudantes in estudante"
-                :key="estudantes.id">
-                <v-card color="rgb(232,234,246, 0.8)"                
-                class="pt-4 mx-auto" flat
-                max-width="400"  min-height="330">
+                :key="estudantes.id"
+            >
+                <v-card
+                    color="rgb(232,234,246, 0.8)"
+                    class="pt-4 mx-auto"
+                    flat
+                    max-width="400"
+                    min-height="330"
+                >
                     <v-card-text>
                         <v-avatar size="88">
                             <v-img :src="estudantes.img" class="mb-4">
-                                <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
-                                    <v-progress-circular indeterminate color="grey darken-5"></v-progress-circular>
+                                <v-layout
+                                    slot="placeholder"
+                                    fill-height
+                                    align-center
+                                    justify-center
+                                    ma-0
+                                >
+                                    <v-progress-circular
+                                        indeterminate
+                                        color="grey darken-5"
+                                    ></v-progress-circular>
                                 </v-layout>
                             </v-img>
                         </v-avatar>
@@ -77,35 +117,51 @@
                             Lattes:
                         </v-flex>
                         <v-flex>
-                            <a
-                                :href="`${estudantes.website}`"
-                                target="_blank"
-                            >
+                            <a :href="`${estudantes.website}`" target="_blank">
                                 <v-avatar :size="35">
                                     <img src="@/assets/img/icone_lattes.jpg" />
                                 </v-avatar>
                             </a>
                         </v-flex>
                     </v-layout>
-                </v-card>                    
+                </v-card>
             </v-flex>
         </v-layout>
         <div class="text-xs-center">
-             <v-flex class="display-2 text-xs-center my-2 font-weight-medium">Colaboradores Estrangeiros</v-flex>
+            <v-flex class="display-2 text-xs-center my-2 font-weight-medium"
+                >Colaboradores Estrangeiros</v-flex
+            >
         </div>
         <v-layout wrap class="mb-4">
-            <v-flex xs12 sm4 md3 class="text-xs-center"
+            <v-flex
+                xs12
+                sm4
+                md3
+                class="text-xs-center"
                 v-for="estrangeiros in estrangeiro"
-                :key="estrangeiros.id">
-                <v-card color="rgb(232,234,246, 0.8)"            
-                class="pt-4 mx-auto" flat
-                max-width="400" min-height="330">
+                :key="estrangeiros.id"
+            >
+                <v-card
+                    color="rgb(232,234,246, 0.8)"
+                    class="pt-4 mx-auto"
+                    flat
+                    max-width="400"
+                    min-height="330"
+                >
                     <v-card-text>
                         <v-avatar size="88">
                             <v-img :src="estrangeiros.img" class="mb-4">
-                                <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
-                                    <v-progress-circular indeterminate
-                                    color="grey darken-5"></v-progress-circular>
+                                <v-layout
+                                    slot="placeholder"
+                                    fill-height
+                                    align-center
+                                    justify-center
+                                    ma-0
+                                >
+                                    <v-progress-circular
+                                        indeterminate
+                                        color="grey darken-5"
+                                    ></v-progress-circular>
                                 </v-layout>
                             </v-img>
                         </v-avatar>

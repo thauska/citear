@@ -22,7 +22,9 @@
                                     <br />Belém - Pará - Brasil
                                 </p>
                                 <p>Contato: (91) 3201-7834</p>
-                                <p>E-mails: cvaz@ufpa.br/ iamendes1@gmail.com</p>
+                                <p>
+                                    E-mails: cvaz@ufpa.br/ iamendes1@gmail.com
+                                </p>
                             </div>
                         </div>
                     </v-card-title>

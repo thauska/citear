@@ -7,7 +7,7 @@
             }"
             >Produção</img-hero
         >
-        <img-construcao></img-construcao>
+        <ImgConstrucao />        
     </span>
 </template>
 
